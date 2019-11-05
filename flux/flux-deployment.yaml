@@ -101,14 +101,15 @@ spec:
 
         # replace or remove the following URL
         - --git-url=git@github.com:lopf/gitops101
-        - --git-branch=master
+        #- --git-url=ssh://github.com/lopf/gitops101.git
+        - --git-branch=minikube
         - --git-path=deploy/kubernetes
 
         # disable image scanning
         - --registry-exclude-image=*
         
         # increase interval
-        - --git-poll-interval=30s
+        #- --git-poll-interval=30s
 
         # include these next two to connect to an "upstream" service
         # (e.g., Weave Cloud). The token is particular to the service.
